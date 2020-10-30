@@ -1,1 +1,178 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /*border:1px solid grey;*/
+    text-decoration: none;
+    color: #fff;
+}
+
+/*GENERAL STYLES*/
+
+html {
+    font-size:62.5%
+}
+
+body {
+    font-size:1.6rem;
+    font-family: 'Source Code Pro', monospace;
+    background-image: linear-gradient(#9ad1d4, #ff797f);
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+section {
+    padding:4% 0;
+    width:90%;
+    margin:0 auto;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/*NAV STYLES*/
+
+nav {
+    display: flex;
+    padding:2% 0 0 0;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a {
+    display: inline-block;
+    text-align:center;
+    padding: 2%;
+    align-items: center;
+    width: 10rem;
+    height: 4rem;
+}
+
+nav a:hover {
+    background-color: #ff797f;
+}
+
+.links {
+    margin-right:3%;
+    width: 25%
+    flex-wrap: nowrap;
+}
+
+.name {
+    margin-left:3%;
+    align-items: center;
+}
+
+/*HERO IMAGE STYLES*/
+
+.hero-image {
+    background-image: url("clouds.jpg");
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3% auto;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+/*PROJECT STYLING*/
+
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.project {
+    width: 30%;
+    height: 30%;
+    padding: 1%;
+}
+
+.project:hover {
+    opacity: 0.5;
+}
+
+.title {
+ padding: 0 50%;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+    background-color:#ff797f;
+    padding:4% 0;
+    display:flex;
+    justify-content:space-around;
+}
+
+.social, .contact, .hero-text a {
+    display: inline-block;
+    background-color: #fea3a7;
+    display:inline-block;
+    text-align:center;
+    padding:1% 2%;
+}
+
+.social, .contact, .hero-text a:hover {
+    background-color: #9ad1d4;
+}
