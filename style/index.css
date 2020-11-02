@@ -45,6 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*GENERAL STYLES*/
+
 *{
     box-sizing:border-box;
     max-width:100%;
@@ -52,8 +55,6 @@ table {
     text-decoration: none;
     color: #fff;
 }
-
-/*GENERAL STYLES*/
 
 html {
     font-size:62.5%
@@ -68,6 +69,7 @@ body {
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 8rem;
+    text-shadow: 1px 1px gray;
 }
 
 h2 {
@@ -81,41 +83,39 @@ section {
     margin:0 auto;
 }
 
-a:hover {
-    font-weight: bold;
-}
-
 /*NAV STYLES*/
 
-nav {
-    display: flex;
-    padding:2% 0 0 0;
+header {
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+nav {
+    display:flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    display: inline-block;
-    text-align:center;
-    padding: 2%;
-    align-items: center;
     width: 10rem;
-    height: 4rem;
+    height: 3rem;
+    margin: 5px;
+    text-align: center;
 }
 
 nav a:hover {
     background-color: #ff797f;
 }
 
-.links {
-    margin-right:3%;
-    width: 25%
-    flex-wrap: nowrap;
-}
-
 .name {
-    margin-left:3%;
+    display:flex;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 3%;
 }
 
 /*HERO IMAGE STYLES*/
@@ -131,6 +131,15 @@ nav a:hover {
 
 .hero-text {
     text-align: center;
+}
+
+.hero-text a {
+    text-align: center;
+    background-color: #ff797f;
+}
+
+.hero-text a:hover {
+    background-color: #9ad1d4
 }
 
 /*PROJECT STYLING*/
@@ -159,20 +168,83 @@ nav a:hover {
 /*FOOTER STYLING*/
 
 footer {
-    background-color:#ff797f;
-    padding:4% 0;
     display:flex;
-    justify-content:space-around;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
 }
 
-.social, .contact, .hero-text a {
-    display: inline-block;
-    background-color: #fea3a7;
-    display:inline-block;
-    text-align:center;
-    padding:1% 2%;
+footer a {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
 }
 
-.social, .contact, .hero-text a:hover {
+footer a:hover {
     background-color: #9ad1d4;
 }
+
+/*TABLET 800*/
+@media(max-width: 800px) {
+
+h1 {
+    font-size: 6rem;
+}
+
+.hero-image {
+    height: 30vh;
+}
+
+} /*CLOSING 800PX BRACKET*/
+
+/*PHONE 500*/
+
+@media(max-width: 500px) {
+
+.name {
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+    
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+}
+    
+nav {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.hero-image {
+    height: 20vh;
+}
+    
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    width: 100%;
+}
+    
+.project {
+    width: 40%;
+    height: 40%;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+    
+} /*CLOSING 500PX BRACKET*/
